@@ -1,0 +1,45 @@
+.contenedor{
+    background-color: rgb(68, 82, 107);
+    display: grid;
+    padding: 10px;
+    gap: 10px;
+    grid-template-areas:'s1 s1 s1 s1'
+                        's2 s3 s3 s4'
+                        's5 s5 s6 s6';
+}
+
+.elemento{
+    height: 50px;
+    background-color: rgb(84, 113, 143);
+    border: 1px solid rgb(166, 181, 247);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px black,
+                inset 3px 3px 2px rgb(138, 170, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e1{
+    grid-area: s1;
+}
+
+.e2{
+    grid-area: s2;
+}
+
+.e3{
+    grid-area: s3;
+}
+
+.e4{
+    grid-area: s4;
+}
+
+.e5{
+    grid-area: s5;
+}
+
+.e6{
+    grid-area: s6;
+}

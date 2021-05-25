@@ -1,0 +1,24 @@
+.contenedor{
+    background-color: rgb(68, 82, 107);
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+}
+
+.elemento{
+    background-color: rgb(84, 113, 143);
+    border: 1px solid rgb(166, 181, 247);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px black,
+                inset 3px 3px 2px rgb(138, 170, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 2cm;
+}
+
+
+

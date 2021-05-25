@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --br:5px;
+}
+
+body{
+    background-image: url(/ilustracion.png);
+    padding: 0;
+}
+
+header{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(5px);
+    border-radius: var(--br);
+    margin: var(--br);
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.999);
+    border-radius: var(--br);
+    background-color: rgba(16, 63, 47, 0.712);
+    box-shadow: 0 5px 10px 2px rgba(26, 109, 81, 0.712);
+}
+
+nav ul ul{
+    position: relative;
+    top: 4px;
+    display: none;
+}
+
+nav > ul{
+    display: flex;
+    position: relative;
+}
+
+.n1{
+    line-height: 1em;
+}
+
+.n1 ul{
+    position: relative;
+}
+
+.n1:hover ul{
+    cursor: pointer;
+    background-color: rgba(253, 253, 253, 0.644);
+    display: block;
+    border-radius: var(--br);
+    box-shadow: 0 5px 10px 2px rgba(26, 109, 81, 0.712);
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+.n2{
+    position: absolute;
+    left: 1500px;
+    display: flex;
+}
+
+.n3{
+    position: absolute;
+    left: 1600px;
+    display: flex;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.audios{
+    position: relative;
+    top: 65px;
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 80px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(5px);
+    border-radius: var(--br);
+    margin: auto;
+    padding: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.au{
+    list-style: none;
+    margin: 10px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.contenedor{
+    width: 50%;
+    margin: 20px;
+    padding-top: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.contenedor > * {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.contenedor1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-family: 'please write me a song';
+    font-size: 50px;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+
+.fotos{
+    width: 45%;
+    margin: 20px;
+    padding-top: 13px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    position: absolute;
+    right: 5px;
+    top:60px;
+}
+
+.fotos > * {
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.foto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 110px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-family: 'please write me a song';
+    font-size: 50px;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+.audio{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 110px;
+    height: 50px;
+    border: none;
+    color: white;
+    font-family: 'please write me a song';
+    font-size: 50px;
+}
+
+@media (max-width:1100px){
+    .fotos{
+        grid-template-columns: 1fr ;
+    }
+    .audios{
+        grid-template-columns: 1fr ;
+    }
+    .contenedor{
+        grid-template-columns: 1fr ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    height: 500px;
+    background-image: url(/SERENDIPITY.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1;
+}
+
+.contenedor::before{
+    content: "";
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(blueviolet,yellow);
+    opacity: 0.3;
+    position: absolute;
+    z-index: -1;
+}
+
+header{
+    background-color: rgb(220, 201, 238);
+    width: 100%;
+    /* height: 42px;
+    padding: 5px; */
+}
+
+#a1{
+    border-left: 1px solid blueviolet;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(220, 201, 238);
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.menu li a{
+    display: block;
+    color: rgb(68, 7, 124);
+    text-decoration: none;
+    padding: 20px;
+    border-right: 1px solid blueviolet;
+}
+
+.menu li:hover{
+    background-color: white;
+    color: blueviolet;
+}
+
+#imenu{
+    width: 30px;
+    height: 30px;
+}
+
+#btnmenu{
+    display: none;
+}
+
+header label{
+    display: none;
+}
+
+@media(max-width:600px){
+    header label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: rgb(207, 199, 231);
+        width: 40%;
+        margin-left: -40%;
+    } 
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-bottom: 1px solid blueviolet;
+        border-top: 1px solid blueviolet;
+    }
+
+    #btnmenu:checked ~ .menu{
+        margin: 0;
+    }
+
+}

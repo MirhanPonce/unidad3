@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --br:5px;
+}
+
+body{
+    background-image: url(/ilustracion.png);
+    padding: 0;
+}
+
+header{
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.356);
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.356);
+    backdrop-filter: blur(10px);
+    border-radius: var(--br);
+    margin: var(--br);
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.622);
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: white;
+    border-radius: var(--br);
+    background-color: rgba(16, 63, 47, 0.712);
+    box-shadow: 0 5px 10px 2px rgba(26, 109, 81, 0.712);
+}
+
+nav ul ul{
+    position: relative;
+    top: 4px;
+    display: none;
+}
+
+nav > ul{
+    display: flex;
+    position: relative;
+}
+
+.n1{
+    line-height: 1em;
+}
+
+.n1 ul{
+    position: relative;
+}
+
+.n1:hover ul{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.356);
+    display: block;
+    border-radius: var(--br);
+    box-shadow: 0 5px 10px 2px rgba(26, 109, 81, 0.712);
+}
